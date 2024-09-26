@@ -203,3 +203,60 @@ footer{
     border: 0;
     width: 100%;
 }
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav{
+        margin-left: 20px;
+    }
+    .skills-container, .resume-container, footer,nav,.banner,nav > ul{
+        flex-direction: column;
+    }
+    #what-i-do-des{
+        padding: 0px;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    .banner .profile-pic {
+        width: 100%;
+    }
+    .banner{
+        padding: 10px;
+    }
+    footer{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    form>.btn-primary{
+        align-items: center;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea{
+        width: 80%;
+    }
+    .about {
+        padding: 10px;
+    }
+    .about-info-container{
+        flex-direction: column;
+    }
+    textarea{
+        height: 50px;
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
